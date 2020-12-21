@@ -1,17 +1,11 @@
 import readlineSync from 'readline-sync';
 import {greeting} from '../src/cli.js';
 import {userName} from '../src/cli.js';
+import {getRandomNumber} from '../src/generalFunctions.js';
 
 const isEven = (num) => {
     return (num % 2 == 0)? true: false;
 } //проверка на четность
-
-
-const getRandomNumber = (min, max) => {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-} //функция генерация случайного числа
 
 const getCorrectAnswer = (number) => {
     return isEven(number)? "yes": "no"; 
