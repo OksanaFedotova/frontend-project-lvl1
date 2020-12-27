@@ -1,0 +1,4 @@
+import playGame from '../src/index.js';
+import { gameGcd, description } from '../src/games/gcd.js';
+
+playGame(gameGcd, description);
