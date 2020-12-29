@@ -1,4 +1,21 @@
-import { getRandomNumber, calculate } from '../generalFunctions.js';
+import { getRandomNumber } from '../generalFunctions.js';
+
+const calculate = (numberOne, sign, numberTwo) => {
+  let result = 0;
+  switch (sign) {
+    case '+':
+      result = numberOne + numberTwo;
+      break;
+    case '-':
+      result = numberOne - numberTwo;
+      break;
+    case '*':
+      result = numberOne * numberTwo;
+      break;
+    default:
+  }
+  return result;
+};
 
 export const description = 'What is the result of the expression?';
 
