@@ -1,4 +1,14 @@
-import { getRandomNumber, getDivisor } from '../generalFunctions.js';
+import { getRandomNumber } from '../generalFunctions.js';
+
+const getDivisor = (number) => {
+  const result = [];
+  for (let i = 1; i <= number; i += 1) {
+    if (number % i === 0) {
+      result.push(i);
+    }
+  }
+  return result;
+};
 
 export const description = 'Find the greatest common divisor of given numbers.';
 
