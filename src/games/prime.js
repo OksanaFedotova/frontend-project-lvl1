@@ -1,6 +1,6 @@
 import { getRandomNumber } from '../generalFunctions.js';
 
-const isSimple = (num) => {
+const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
@@ -16,6 +16,6 @@ export const description = 'Answer "yes" if given number is prime. Otherwise ans
 
 export const gamePrime = () => {
   const question = getRandomNumber(0, 200);
-  const correctAnswer = isSimple(question) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
