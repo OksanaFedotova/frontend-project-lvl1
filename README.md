@@ -13,30 +13,37 @@
 3. Выполнить команду npm link
 
 
-1. Игра Brain-even
+## Игра Brain-even
 
 Необходимо ответить, является ли демонстрируемое число четным или нет. 
 
 ### Brain-even asciinema
 [![asciicast](https://asciinema.org/a/yP7auTL8WmSS66UvpQ1byFEo4.svg)](https://asciinema.org/a/yP7auTL8WmSS66UvpQ1byFEo4)
-2. Игра Brain-calc 
+
+## Игра Brain-calc 
 
 Необходимо произвести арифметические вычисления и дать ответ.
 
 ### Brain-calc asciinema
 [![asciicast](https://asciinema.org/a/sKYejna7JhFbR1KMArlPhf7Xy.svg)](https://asciinema.org/a/sKYejna7JhFbR1KMArlPhf7Xy)
 
-3. Необходимо указать наибольший общий делитель для двух чисел.
+## Игра Brain-gcd
+
+Необходимо указать наибольший общий делитель для двух чисел.
 
 ### Brain-gcd asciinema
 [![asciicast](https://asciinema.org/a/bUIdVB3wavUGcnNQj76fI1WSS.svg)](https://asciinema.org/a/bUIdVB3wavUGcnNQj76fI1WSS)
 
-4. Необходимо указать число, пропущенное в арифметической прогрессии
+## Игра Brain-progression
+
+Необходимо указать число, пропущенное в арифметической прогрессии
 
 ### Brain-progression asciinema
 [![asciicast](https://asciinema.org/a/IJVdGIOZ4LW1iFC1t4QXAMwyX.svg)](https://asciinema.org/a/IJVdGIOZ4LW1iFC1t4QXAMwyX)
 
-5. Необходимо указать, является ли демонстрируемое число простым или нет. 
+## Игра Brain-prime
+
+Необходимо указать, является ли демонстрируемое число простым или нет. 
 
 ### Brain-prime asciinema
 [![asciicast](https://asciinema.org/a/W9pSRWa04U9dfyAFaQia0hLoN.svg)](https://asciinema.org/a/W9pSRWa04U9dfyAFaQia0hLoN)
