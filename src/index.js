@@ -8,6 +8,7 @@ const playGame = (getGameSpecific, conditions) => {
     const [question, correctAnswer] = getGameSpecific();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
+    // eslint-disable-next-line eqeqeq
     if (correctAnswer == userAnswer) {
       console.log('Correct!');
     } else {
