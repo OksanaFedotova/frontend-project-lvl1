@@ -13,11 +13,11 @@ const playGame = (getGameSpecific, conditions) => {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       break;
     }
     if (i === 2) {
-      console.log(`Congratulations, ${userName}`);
+      console.log(`Congratulations, ${userName}!`);
     }
   }
 };
