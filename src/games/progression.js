@@ -7,12 +7,13 @@ export const gameProgression = () => {
   const length = getRandomNumber(5, 11);
   const difference = getRandomNumber(1, 6);
   const arr = new Array(length).fill(0);
-  const question = arr.map((element, index) => {
+  const progression = arr.map((element, index) => {
     let num = element;
     num = firstElement + index * difference;
     return num;
   });
   const hiddenElIndex = getRandomNumber(0, length);
-  const correctAnswer = question.splice(hiddenElIndex, 1, '..')[0];
+  const correctAnswer = progression.splice(hiddenElIndex, 1, '..')[0];
+  const question = progression.join(' ');
   return [question, correctAnswer];
 };
