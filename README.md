@@ -2,7 +2,7 @@
 
 ![Actions Status](https://github.com/OksanaFedotova/frontend-project-lvl1/workflows/hexlet-check/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-![workflow status](https://github.com/OksanaFedotova/frontend-project-lvl1/workflows/Super-Linter/badge.svg)
+![workflow status](https://github.com/OksanaFedotova/frontend-project-lvl1/workflows/linter/badge.svg)
 
 Данный проект представляет собой 5 арифметических мини-игр, запускаемых в командной строке. Каждая игра включает в себя 3 раунда, после прохождения которых игра завершается. В случае ошибки игра прекращается. 
 
