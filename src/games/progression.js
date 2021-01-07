@@ -2,7 +2,7 @@ import { getRandomNumber } from '../generalFunctions.js';
 
 export const description = 'What number is missing in the progression?';
 
-export const gameProgression = () => {
+export const getSpecificProgression = () => {
   const firstElement = getRandomNumber(0, 50);
   const length = getRandomNumber(5, 11);
   const difference = getRandomNumber(1, 6);
@@ -13,7 +13,7 @@ export const gameProgression = () => {
     return num;
   });
   const hiddenElIndex = getRandomNumber(0, length);
-  const correctAnswer = progression.splice(hiddenElIndex, 1, '..')[0];
+  const correctAnswer = `${(progression.splice(hiddenElIndex, 1, '..')[0])}`;
   const question = progression.join(' ');
   return [question, correctAnswer];
 };

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import playGame from '../src/index.js';
-import { gameGcd, description } from '../src/games/gcd.js';
+import { getSpecificGcd, description } from '../src/games/gcd.js';
 
-playGame(gameGcd, description);
+playGame(getSpecificGcd, description);
