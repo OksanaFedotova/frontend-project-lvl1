@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { greet } from './cli.js';
+import greet from './cli.js';
 
 const playGame = (getGameSpecific, conditions) => {
   const userName = greet();
