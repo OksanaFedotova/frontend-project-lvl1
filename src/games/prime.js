@@ -6,7 +6,7 @@ const isPrime = (num) => {
   }
   const limit = Math.ceil(Math.sqrt(num));
   for (let i = 2; i <= limit; i += 1) {
-    if (limit % i === 0) {
+    if (num % i === 0) {
       return false;
     }
   }
