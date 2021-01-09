@@ -1,11 +1,11 @@
 import { getRandomNumber } from '../generalFunctions.js';
 
-export const description = 'Answer "yes" if the number is even, otherwise answer "no".'; // условия
+export const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".'; // условия
 
-export const getSpecificEven = () => {
-  const isEven = (num) => ((num % 2 === 0)); // проверка на четность
-  const getCorrectAnswer = (number) => (isEven(number) ? 'yes' : 'no'); // функция получения правильного ответа
-  const question = getRandomNumber(0, 101); // получение числа
-  const correctAnswer = getCorrectAnswer(question); // получить правильный ответ
+export const makeRound = () => {
+  const isEven = (num) => ((num % 2 === 0));
+  const getCorrectAnswer = (number) => (isEven(number) ? 'yes' : 'no');
+  const question = getRandomNumber(0, 101);
+  const correctAnswer = getCorrectAnswer(question);
   return [question, correctAnswer];
 };

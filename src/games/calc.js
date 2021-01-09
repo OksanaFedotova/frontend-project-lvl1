@@ -17,9 +17,9 @@ const calculate = (numberOne, sign, numberTwo) => {
   return result;
 };
 
-export const description = 'What is the result of the expression?';
+export const gameRules = 'What is the result of the expression?';
 
-export const getSpecificCalc = () => {
+export const makeRound = () => {
   const randomNumberOne = getRandomNumber(0, 50);
   const randomNumberTwo = getRandomNumber(0, 50);
   const operators = ['+', '-', '*'];

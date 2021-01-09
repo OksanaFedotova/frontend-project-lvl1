@@ -1,14 +1,13 @@
 import readlineSync from 'readline-sync';
 import greet from './cli.js';
 
-const playGame = (getGameSpecific, conditions) => {
+const playGame = (makeRound, gameRules) => {
   const userName = greet();
-  console.log(conditions);
+  console.log(gameRules);
   for (let i = 0; i < 3; i += 1) {
-    const [question, correctAnswer] = getGameSpecific();
+    const [question, correctAnswer] = makeRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    // eslint-disable-next-line eqeqeq
     if (correctAnswer === userAnswer) {
       console.log('Correct!');
     } else {
