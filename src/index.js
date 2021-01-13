@@ -14,9 +14,9 @@ const playGame = (makeRound, description) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
-      break;
+      return;
     }
-    if (i === 2) console.log(`Congratulations, ${userName}!`);
+    console.log(`Congratulations, ${userName}!`);
   }
 };
 
