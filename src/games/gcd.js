@@ -20,12 +20,12 @@ const getGCD = (firstNumber, secondNumber) => {
   return GCD;
 };
 
-export const gameRules = 'Find the greatest common divisor of given numbers.';
+export const description = 'Find the greatest common divisor of given numbers.';
 
 export const makeRound = () => {
   const randomNumberOne = getRandomNumber(1, 101);
   const randomNumberTwo = getRandomNumber(1, 101);
   const question = `${randomNumberOne} ${randomNumberTwo}`;
-  const correctAnswer = `${getGCD(randomNumberOne, randomNumberTwo)}`;
+  const correctAnswer = String(getGCD(randomNumberOne, randomNumberTwo));
   return [question, correctAnswer];
 };

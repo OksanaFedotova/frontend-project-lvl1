@@ -17,7 +17,7 @@ const calculate = (numberOne, sign, numberTwo) => {
   return result;
 };
 
-export const gameRules = 'What is the result of the expression?';
+export const description = 'What is the result of the expression?';
 
 export const makeRound = () => {
   const randomNumberOne = getRandomNumber(0, 50);
@@ -27,7 +27,7 @@ export const makeRound = () => {
   const operator = operators[index];
   const question = `${randomNumberOne} ${operator} ${randomNumberTwo}`;
 
-  const correctAnswer = `${calculate(randomNumberOne, operator, randomNumberTwo)}`;
+  const correctAnswer = String(calculate(randomNumberOne, operator, randomNumberTwo));
 
   return [question, correctAnswer];
 };

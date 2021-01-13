@@ -13,7 +13,7 @@ const isPrime = (num) => {
   return true;
 };
 
-export const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+export const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export const makeRound = () => {
   const question = getRandomNumber(0, 200);

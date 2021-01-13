@@ -1,10 +1,11 @@
 import readlineSync from 'readline-sync';
 import greet from './cli.js';
 
-const playGame = (makeRound, gameRules) => {
+const playGame = (makeRound, description) => {
   const userName = greet();
-  console.log(gameRules);
-  for (let i = 0; i < 3; i += 1) {
+  console.log(description);
+  const roundsQuantity = 3;
+  for (let i = 0; i < roundsQuantity; i += 1) {
     const [question, correctAnswer] = makeRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -15,7 +16,7 @@ const playGame = (makeRound, gameRules) => {
       console.log(`Let's try again, ${userName}!`);
       break;
     }
-    console.log(`Congratulations, ${userName}!`);
+    if (i === 2) console.log(`Congratulations, ${userName}!`);
   }
 };
 

@@ -1,6 +1,6 @@
 import { getRandomNumber } from '../generalFunctions.js';
 
-export const gameRules = 'What number is missing in the progression?';
+export const description = 'What number is missing in the progression?';
 
 const makeProgression = (length, firstMember, difference) => {
   const arr = new Array(length).fill(0);
@@ -18,7 +18,8 @@ export const makeRound = () => {
   const difference = getRandomNumber(1, 6);
   const progression = makeProgression(length, firstElement, difference);
   const hiddenElIndex = getRandomNumber(0, length);
-  const correctAnswer = `${(progression.splice(hiddenElIndex, 1, '..')[0])}`;
+  const result = progression.splice(hiddenElIndex, 1, '..')[0];
+  const correctAnswer = String(result);
   const question = progression.join(' ');
   return [question, correctAnswer];
 };
