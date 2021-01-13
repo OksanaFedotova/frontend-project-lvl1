@@ -1,8 +1,8 @@
 import { getRandomNumber } from '../generalFunctions.js';
 
 const getDivisors = (number) => {
-  const result = [];
-  for (let i = 1; i <= number; i += 1) {
+  const result = [1, number];
+  for (let i = 2; i <= number / 2; i += 1) {
     if (number % i === 0) {
       result.push(i);
     }
