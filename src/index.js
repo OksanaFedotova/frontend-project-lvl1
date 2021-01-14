@@ -16,8 +16,8 @@ const playGame = (makeRound, description) => {
       console.log(`Let's try again, ${userName}!`);
       return;
     }
-    console.log(`Congratulations, ${userName}!`);
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default playGame;

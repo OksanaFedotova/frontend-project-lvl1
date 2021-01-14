@@ -18,8 +18,8 @@ export const makeRound = () => {
   const difference = getRandomNumber(1, 6);
   const progression = makeProgression(length, firstElement, difference);
   const hiddenElIndex = getRandomNumber(0, length);
-  const result = progression.splice(hiddenElIndex, 1, '..')[0];
-  const correctAnswer = String(result);
+  const hiddenElement = progression.splice(hiddenElIndex, 1, '..')[0];
+  const correctAnswer = String(hiddenElement);
   const question = progression.join(' ');
   return [question, correctAnswer];
 };
